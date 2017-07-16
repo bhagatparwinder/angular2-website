@@ -6,4 +6,16 @@ import { Component } from '@angular/core';
     templateUrl: 'jumbotron.component.html'
 })
 
-export class JumbotronComponent{}
+export class JumbotronComponent{
+    private jbtHeading:string;
+    private jbtText:string;
+    private jbtButtonText:string;
+    private jbtButtonUrl:string;
+
+    constructor(){
+        this.jbtHeading = 'Hello, world!';
+        this.jbtText = 'This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.';
+        this.jbtButtonText = 'Learn more »';
+        this.jbtButtonUrl = '/about';
+    }
+}
